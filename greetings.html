@@ -44,8 +44,6 @@
 </body>
 
 <script> 
-    let timeZone = 'America/Los_Angeles';
-    
     var weekday = new Array(7);
     weekday[0] = "sunday";
     weekday[1] = "monday";
@@ -60,7 +58,7 @@
     ];
 
     
-    var today = new Date();
+    var today = new Date(new Date().toLocaleString('en',{timeZone: 'America/Los_Angeles'}));
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
     var date = `${dayOfWeek} | ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
