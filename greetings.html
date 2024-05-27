@@ -46,10 +46,9 @@
     <div id="lbl"></div>
 </body>
 
-<script>
-    let options = {timeZone: 'America/Los_Angeles'};
-    
+<script> 
     var weekday = new Array(7);
+    let options = {timeZone: 'America/Los_Angeles'};
     weekday[0] = "sunday";
     weekday[1] = "monday";
     weekday[2] = "tuesday";
@@ -64,6 +63,7 @@
 
     
     var today = new Date();
+    let options = {timeZone: 'America/Los_Angeles'};
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
     var date = `${dayOfWeek} | ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
