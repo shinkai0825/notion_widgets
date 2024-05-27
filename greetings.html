@@ -28,7 +28,7 @@
       #date{
           font-size:12pt;
           font-weight: bold;
-          font-family: monospace;
+          font-family: monaco, monospace;
       }
 
       body{
@@ -59,7 +59,7 @@
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+    var date = `${dayOfWeek} | ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
 
     var greet;
 
